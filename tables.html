@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Badges</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	    <link href="https://badges.mozilla.org/static/css/base.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<style>
+
+
+
+
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+position: fixed;
+right: 0;
+left: 0;
+z-index: 1030;
+}
+	</style>
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+
+      <!-- Sidebar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Badges.mozilla</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+           <ul class="nav navbar-nav side-nav">
+            <li class="active"><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+           
+            <li><a href="tables.html"><i class="fa fa-table"></i> Badges</a></li>
+            <li><a href="forms.html"><i class="fa fa-edit"></i> Awards</a></li>
+			<li><a href="index.html"><i class="fa fa-bar-chart-o"></i> Mozzilians</a></li>
+            <li><a href="index.html"><i class="fa fa-font"></i> Tags</a></li>
+            <li><a href="index.html"><i class="fa fa-desktop"></i> Create a new badge</a></li>
+            <li><a href="index.html"><i class="fa fa-wrench"></i> Claim award from code</a></li>
+            <li><a href="blank-page.html"><i class="fa fa-file"></i> Blank Page</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Dropdown Item</a></li>
+                <li><a href="#">Another Item</a></li>
+                <li><a href="#">Third Item</a></li>
+                <li><a href="#">Last Item</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right navbar-user">
+            <li class="dropdown messages-dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages <span class="badge">7</span> <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">7 New Messages</li>
+                <li class="message-preview">
+                  <a href="#">
+                    <span class="avatar"><img src="http://placehold.it/50x50"></span>
+                    <span class="name">John Smith:</span>
+                    <span class="message">Hey there, I wanted to ask you something...</span>
+                    <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li class="message-preview">
+                  <a href="#">
+                    <span class="avatar"><img src="http://placehold.it/50x50"></span>
+                    <span class="name">John Smith:</span>
+                    <span class="message">Hey there, I wanted to ask you something...</span>
+                    <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li class="message-preview">
+                  <a href="#">
+                    <span class="avatar"><img src="http://placehold.it/50x50"></span>
+                    <span class="name">John Smith:</span>
+                    <span class="message">Hey there, I wanted to ask you something...</span>
+                    <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li><a href="#">View Inbox <span class="badge">7</span></a></li>
+              </ul>
+            </li>
+            <li class="dropdown alerts-dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> Alerts <span class="badge">3</span> <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Default <span class="label label-default">Default</span></a></li>
+                <li><a href="#">Primary <span class="label label-primary">Primary</span></a></li>
+                <li><a href="#">Success <span class="label label-success">Success</span></a></li>
+                <li><a href="#">Info <span class="label label-info">Info</span></a></li>
+                <li><a href="#">Warning <span class="label label-warning">Warning</span></a></li>
+                <li><a href="#">Danger <span class="label label-danger">Danger</span></a></li>
+                <li class="divider"></li>
+                <li><a href="#">View All</a></li>
+              </ul>
+            </li>
+            <li class="dropdown user-dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+                <li><a href="#"><i class="fa fa-envelope"></i> Inbox <span class="badge">7</span></a></li>
+                <li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+
+      <div id="page-wrapper">
+<ul class="badges">
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/L10n-Cleaner-badge" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/a/0/a00b98747f7cef078b1986463d16dd69_image_1402763154_0658.png" alt="L10n Cleaner badge" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/L10n-Cleaner-badge" class="label"><span class="title">L10n Cleaner badge</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/MozCamp-Beta-India-Attendee" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/5/e/5ed57e078317209ccc00e625b883b46f_image_1402450753_0592.png" alt="MozCamp Beta India Attendee" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/MozCamp-Beta-India-Attendee" class="label"><span class="title">MozCamp Beta India Attendee</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/India-Indic-FirefoxOS-L10n-Sprint-2014" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/9/2/92fbadc2c8fae8e04f14616bc25af5b2_image_1402120428_0958.png" alt="India/Indic FirefoxOS L10n Sprint 2014" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/India-Indic-FirefoxOS-L10n-Sprint-2014" class="label"><span class="title">India/Indic FirefoxOS L10n Sprint 2014</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/New-Contributions-Review-Sprint" class="image"><img src="https://badges.mozilla.org//static/img/default-badge.png" alt="New Contributions Review Sprint " width="128" height="128"></a>
+            <a href="/en-US/badges/badge/New-Contributions-Review-Sprint" class="label"><span class="title">New Contributions Review Sprint </span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Firefox-for-Android-Mobile-Tester-Enthusiast" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/1/a/1a10044528e19e4f13a4865ee8b4630b_image_1401215397_0856.png" alt="Firefox for Android - Mobile Tester Enthusiast" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Firefox-for-Android-Mobile-Tester-Enthusiast" class="label"><span class="title">Firefox for Android - Mobile Tester Enthusiast</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/MozCamp-Kashmir-2014-Participant" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/c/e/ce9a8524ae9d2525c53dfd737a0c5e15_image_1400346986_0566.png" alt="MozCamp Kashmir 2014 Participant" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/MozCamp-Kashmir-2014-Participant" class="label"><span class="title">MozCamp Kashmir 2014 Participant</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/MozCamp-Kashmir-2014-Organizing-Member" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/4/9/49294d043b14861138200366f461530b_image_1400347828_0020.png" alt="MozCamp Kashmir 2014 Organizing Member" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/MozCamp-Kashmir-2014-Organizing-Member" class="label"><span class="title">MozCamp Kashmir 2014 Organizing Member</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Paris-Locasprint-host-april-2014" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/2/6/26236a83e401668ca1b10ecae61b63b0_image_1400103385_0888.png" alt="Paris Locasprint host, april 2014" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Paris-Locasprint-host-april-2014" class="label"><span class="title">Paris Locasprint host, april 2014</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Paris-Locasprint-participant-april-2014" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/d/7/d70d92a65b2a178372639c7b0654eb72_image_1400091474_0569.png" alt="Paris Locasprint participant, april 2014" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Paris-Locasprint-participant-april-2014" class="label"><span class="title">Paris Locasprint participant, april 2014</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Mouflet" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/9/f/9f2444643f57933a77353f6f53f0965c_image_1400060438_0978.png" alt="Mouflet" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Mouflet" class="label"><span class="title">Mouflet</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Community-building-rockstar" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/d/a/daabd997751e2d5e050260f480920de9_image_1391798410_0825.png" alt="Community building superstar" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Community-building-rockstar" class="label"><span class="title">Community building superstar</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Soporte-de-lanzamiento-Firefox-29" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/2/c/2ceb6f6525d6148cd72c39a9e6c23240_image_1399716013_0778.png" alt="Soporte de lanzamiento, Firefox 29" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Soporte-de-lanzamiento-Firefox-29" class="label"><span class="title">Soporte de lanzamiento, Firefox 29</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Web-QA-Sorceror" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/b/b/bb0bee31d7c44f25078febbcd39835ef_image_1396286550_0689.png" alt="Web QA Sorceror" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Web-QA-Sorceror" class="label"><span class="title">Web QA Sorceror</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Web-QA-Apprentice" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/1/2/12fad32cb6dd277b889758ce03d732ad_image_1396284813_0689.png" alt="Web QA Apprentice" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Web-QA-Apprentice" class="label"><span class="title">Web QA Apprentice</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Web-QA-Enthusiast" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/6/6/66b18374abd396f754cf3ab1386519e4_image_1396282580_0920.png" alt="Web QA Enthusiast" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Web-QA-Enthusiast" class="label"><span class="title">Web QA Enthusiast</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Web-Compatibility-Site-Outreach" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/3/7/37873bd388c5c24410f6a2743d112afc_image_1398869722_0737.png" alt="Web Compatibility - Site Outreach" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Web-Compatibility-Site-Outreach" class="label"><span class="title">Web Compatibility - Site Outreach</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Web-Compatibility-Bug-Reporter" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/7/6/76f682b6083bcfb8d7f5f0e0b0646d5f_image_1398869065_0213.png" alt="Web Compatibility - Bug Reporter" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Web-Compatibility-Bug-Reporter" class="label"><span class="title">Web Compatibility - Bug Reporter</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Web-QA-Test-day-badge" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/6/d/6d713ccf39642793339fbe1788fc5b6d_image_1398361943_0862.png" alt="Web QA Test day badge" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Web-QA-Test-day-badge" class="label"><span class="title">Web QA Test day badge</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Mozilla-Hispano-Work-Week-2014" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/d/0/d0d052786ccf9604f18876df47443cd1_image_1398374985_0699.png" alt="Mozilla Hispano Work Week 2014" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Mozilla-Hispano-Work-Week-2014" class="label"><span class="title">Mozilla Hispano Work Week 2014</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/App-Day-Participant" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/5/c/5cf117ee9138b3dc579042e90e9da13c_image_1395859773_0138.png" alt="App Day Participant" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/App-Day-Participant" class="label"><span class="title">App Day Participant</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Coders-Firefox-Club" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/1/3/135b2a1aa73526def589fff1299e925c_image_1397912766_0856.png" alt="Coders Firefox Club" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Coders-Firefox-Club" class="label"><span class="title">Coders Firefox Club</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/OSCAL-2014-Speaker" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/7/f/7fbf0a343df4db10cd5d8f67e38595e7_image_1397683413_0595.png" alt="OSCAL 2014 Speaker" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/OSCAL-2014-Speaker" class="label"><span class="title">OSCAL 2014 Speaker</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/OSCAL-2014-Organizer" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/a/4/a43553af9bf5bc6407809dc00dc04db5_image_1397683168_0297.png" alt="OSCAL 2014 Organizer" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/OSCAL-2014-Organizer" class="label"><span class="title">OSCAL 2014 Organizer</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/OSCAL-2014-Attendant" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/b/4/b4d9cc0486ba0f2d6500fba43af90f24_image_1397682841_0582.png" alt="OSCAL 2014 Attendant" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/OSCAL-2014-Attendant" class="label"><span class="title">OSCAL 2014 Attendant</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Participant" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/f/4/f4b433a64b92a354a943dcd5e1aeb439_image_1396097037_0132.png" alt="Mozilla Participant" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Participant" class="label"><span class="title">Mozilla Participant</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Colaborador-del-mes" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/6/5/65d7a63ba7abde4714b943654c93289e_image_1371244762_0905.png" alt="Colaborador del mes" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Colaborador-del-mes" class="label"><span class="title">Colaborador del mes</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/standformozilla" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/7/0/702a29befbe32d7e64cf40f83759056b_image_1397109130_0003.png" alt="#standformozilla" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/standformozilla" class="label"><span class="title">#standformozilla</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/I-Attended-the-Portland-Reps-Meetup-2014" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/4/e/4e15047fdc6ff174aed27238f95c82f8_image_1396812083_0318.png" alt="I Attended the Portland Reps Meetup (2014)" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/I-Attended-the-Portland-Reps-Meetup-2014" class="label"><span class="title">I Attended the Portland Reps Meetup (2014)</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/DICE-Workshop-Attendee" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/7/5/75bfb660c03910c24dd67593dd79f8c5_image_1383684451_0832.png" alt="DICE Workshop Attendee" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/DICE-Workshop-Attendee" class="label"><span class="title">DICE Workshop Attendee</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Servo-Rust-upgrade" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/0/7/076934203c7b6a980a44a5a26e1b3e1d_image_1396650272_0719.png" alt="Servo Rust upgrade" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Servo-Rust-upgrade" class="label"><span class="title">Servo Rust upgrade</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/WebQA-1-pull-request-merged" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/0/8/08a21a3b34c262fe1508b8f9238be636_image_1390345032_0802.png" alt="WebQA 1 pull request merged" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/WebQA-1-pull-request-merged" class="label"><span class="title">WebQA 1 pull request merged</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/WebQA-50-pull-requests-merged" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/a/4/a4eab8d3728794893f0d70334837b42d_image_1390345012_0345.png" alt="WebQA 50 pull requests merged" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/WebQA-50-pull-requests-merged" class="label"><span class="title">WebQA 50 pull requests merged</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/WebQA-10-pull-requests-merged" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/1/2/12b3744e5f9742b886e2750b3ad3fcb5_image_1390345050_0699.png" alt="WebQA 10 pull requests merged" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/WebQA-10-pull-requests-merged" class="label"><span class="title">WebQA 10 pull requests merged</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/MozBoot-Attendee" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/9/3/939ef1169bbbe739e8352441d75b76d7_image_1392811105_0881.png" alt="MozBoot Attendee " width="128" height="128"></a>
+            <a href="/en-US/badges/badge/MozBoot-Attendee" class="label"><span class="title">MozBoot Attendee </span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Think-Big-Brussels-Participant" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/2/1/218076ef01c16167e0b5f369d58b4104_image_1395763100_0074.png" alt="Think Big Brussels Participant" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Think-Big-Brussels-Participant" class="label"><span class="title">Think Big Brussels Participant</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Mozilla-l10n-Hindi-Reviewer" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/f/b/fbcb9acba64f5c31dd84b592c645f64b_image_1395570993_0035.png" alt="Mozilla l10n Hindi Reviewer" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Mozilla-l10n-Hindi-Reviewer" class="label"><span class="title">Mozilla l10n Hindi Reviewer</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Action-Badge" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/4/c/4c63b309576e521d1dba24c3617ea1ff_image_1395243158_0220.png" alt="Action Badge" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Action-Badge" class="label"><span class="title">Action Badge</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Amazing-Planner" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/f/b/fbed9ae1f82ae1aebc38f3a97d6962ca_image_1394946575_0746.png" alt="Amazing Planner" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Amazing-Planner" class="label"><span class="title">Amazing Planner</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/MozFestharbour" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/2/5/25de31e830b0cf240b90d74b479d2f80_image_1395139302_0351.png" alt="MozFest@harbour " width="128" height="128"></a>
+            <a href="/en-US/badges/badge/MozFestharbour" class="label"><span class="title">MozFest@harbour </span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Live-Scriptor" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/1/a/1a42bd583646496d4dc01d89ade63281_image_1395086002_0425.png" alt="Live Scriptor" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Live-Scriptor" class="label"><span class="title">Live Scriptor</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Bangladeshi-Mozillian" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/9/8/986b346da6bd692b3edaae387e97271b_image_1395074740_0776.png" alt="Bangladeshi Mozillian" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Bangladeshi-Mozillian" class="label"><span class="title">Bangladeshi Mozillian</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Localizer-The-QA-Tester" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/0/a/0adc431e818e3917b236110987945367_image_1391012784_0555.png" alt="Localizer - The QA Tester" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Localizer-The-QA-Tester" class="label"><span class="title">Localizer - The QA Tester</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Awesome-Localizer" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/2/3/231045ee2c0202427eb11a132f499faf_image_1390844652_0496.png" alt="Awesome Localizer" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Awesome-Localizer" class="label"><span class="title">Awesome Localizer</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Localizer-The-Pro" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/2/4/2462a6f18029ab8b5331edd6b80f8ecd_image_1391011139_0767.png" alt="Localizer - The Pro" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Localizer-The-Pro" class="label"><span class="title">Localizer - The Pro</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Localizer-The-Editor" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/9/4/94a462c48433e22b6e726dc7b6af691f_image_1391012291_0900.png" alt="Localizer - The Editor" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Localizer-The-Editor" class="label"><span class="title">Localizer - The Editor</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Mentor-Helmet-An-Ally-to-she%7C%7Chera%7C%7Cmen" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/c/7/c7fd97b83a59582c62d153fa12dff05a_image_1395071072_0081.png" alt="Mentor Helmet - The Ally Supporter " width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Mentor-Helmet-An-Ally-to-she%7C%7Chera%7C%7Cmen" class="label"><span class="title">Mentor Helmet - The Ally Supporter </span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Womaniya-Speaker" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/2/c/2c4cdc1a53ff24d3f157476ec7071d64_image_1394997774_0205.png" alt="Womaniya - Speaker" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Womaniya-Speaker" class="label"><span class="title">Womaniya - Speaker</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Teste" class="image"><img src="https://badges.mozilla.org//static/img/default-badge.png" alt="Teste" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Teste" class="label"><span class="title">Teste</span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Keon-Prize-by-Tela-Social" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/6/e/6ecd793fe60e2d686e7b60ac2722fea1_image_1394734041_0968.png" alt="Keon Prize by Tela Social " width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Keon-Prize-by-Tela-Social" class="label"><span class="title">Keon Prize by Tela Social </span></a>
+        </li>
+                                        <li class="badge">
+            <a href="/en-US/badges/badge/Rich" class="image"><img src="https://badges.mozilla.org//media/uploads/badge/8/4/84814b43bd0271bd407e14ca38654207_image_1394642557_0324.png" alt="Rich" width="128" height="128"></a>
+            <a href="/en-US/badges/badge/Rich" class="label"><span class="title">Rich</span></a>
+        </li>
+    </ul>
+
+  
+
+      </div><!-- /#page-wrapper -->
+
+    </div><!-- /#wrapper -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Page Specific Plugins -->
+    <script src="js/tablesorter/jquery.tablesorter.js"></script>
+    <script src="js/tablesorter/tables.js"></script>
+
+  </body>
+</html>
